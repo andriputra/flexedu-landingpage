@@ -23,8 +23,8 @@ export default function Footer() {
             Kiosk
           </a>
           <WaButton className="hover:text-cyan">WhatsApp</WaButton>
-          <a href={`mailto:${site.email}`} className="hover:text-cyan">
-            Email
+          <a href="https://flexedu-attend.vercel.app/login" target="_blank" className="hover:text-cyan">
+            Demo
           </a>
         </div>
         <p className="text-xs text-slate-500">© {new Date().getFullYear()} FlexEdu. All rights reserved.</p>

@@ -11,21 +11,23 @@ export default function Product() {
     <section id="kiosk" className="relative scroll-mt-28 overflow-hidden py-24">
       <div className="absolute inset-0 bg-gradient-to-b from-navy via-navy-mid to-navy" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
-        <div className="relative">
+        <div className="relative" data-reveal="left">
           <div className="absolute -inset-6 rounded-[2rem] bg-cyan/10 blur-3xl" />
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_30px_80px_rgba(0,0,0,0.45)]">
-            <img
-              src="./kiosk.png"
-              alt="Kiosk smart campus FlexEdu"
-              className="w-full object-cover"
-            />
+            <div data-parallax="0.1" className="will-change-transform">
+              <img
+                src="./kiosk.png"
+                alt="Kiosk smart campus FlexEdu"
+                className="w-full scale-105 object-cover"
+              />
+            </div>
             <div className="absolute bottom-4 left-4 rounded-full border border-cyan/30 bg-navy/70 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-cyan backdrop-blur">
               Smart Campus Kiosk
             </div>
           </div>
         </div>
 
-        <div id="solusi" className="scroll-mt-28">
+        <div id="solusi" className="scroll-mt-28" data-reveal="right">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan">
             Smart campus hardware
           </p>

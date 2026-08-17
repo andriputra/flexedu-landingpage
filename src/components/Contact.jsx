@@ -24,7 +24,7 @@ export default function Contact() {
     <section id="kontak" className="relative scroll-mt-28 overflow-hidden py-24">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(245,185,66,0.12),transparent_55%)]" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2">
-        <div>
+        <div data-reveal="left">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
             Mulai sekarang
           </p>
@@ -64,6 +64,7 @@ export default function Contact() {
 
         <form
           onSubmit={onSubmit}
+          data-reveal="right"
           className="rounded-3xl border border-gold/20 bg-navy-mid/80 p-6 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur sm:p-8"
         >
           <label className="block text-sm text-slate-300">

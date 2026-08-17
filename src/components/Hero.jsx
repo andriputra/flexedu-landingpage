@@ -38,11 +38,13 @@ export default function Hero() {
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-[78%] w-[78%] -translate-x-1/2 -translate-y-1/2 rounded-full hud-ring pulse-ring" />
           <div className="pointer-events-none absolute left-1/2 top-1/2 h-[92%] w-[92%] -translate-x-1/2 -translate-y-1/2 rounded-full hud-ring" />
           <div className="relative overflow-hidden rounded-[2rem] border border-cyan/20 bg-navy-deep/40 shadow-[0_0_80px_rgba(34,211,238,0.18)]">
-            <img
-              src="./face-scan.png"
-              alt="AI student identity scan FlexEdu"
-              className="float-slow w-full object-cover"
-            />
+            <div data-parallax="0.08" className="will-change-transform">
+              <img
+                src="./face-scan.png"
+                alt="AI student identity scan FlexEdu"
+                className="float-slow w-full object-cover"
+              />
+            </div>
             <div className="pointer-events-none absolute inset-0 overflow-hidden">
               <div className="scan-line absolute inset-x-0 h-28" />
             </div>

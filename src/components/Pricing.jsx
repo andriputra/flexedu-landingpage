@@ -73,7 +73,7 @@ export default function Pricing() {
     <section id="harga" className="relative scroll-mt-28 overflow-hidden py-24">
       <div className="grid-bg absolute inset-0 opacity-30" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
             Pricing
           </p>
@@ -85,11 +85,11 @@ export default function Pricing() {
           </p>
         </div>
 
-        <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-3">
+        <div className="mt-14 grid items-stretch gap-6 lg:grid-cols-3" data-stagger>
           {plans.map((plan) => (
             <article
               key={plan.id}
-              className={`relative flex flex-col rounded-3xl border p-7 ${
+              className={`hover-lift relative flex flex-col rounded-3xl border p-7 ${
                 plan.featured
                   ? "border-gold/50 bg-gradient-to-b from-gold/15 to-navy-card/80 shadow-[0_0_50px_rgba(245,185,66,0.12)]"
                   : "border-white/10 bg-navy-card/60"

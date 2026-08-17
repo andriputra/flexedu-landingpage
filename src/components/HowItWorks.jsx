@@ -89,7 +89,7 @@ export default function HowItWorks() {
     >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(34,211,238,0.08),transparent_60%)]" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between" data-reveal>
           <div className="max-w-2xl">
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
               Cara kerja
@@ -121,7 +121,7 @@ export default function HowItWorks() {
             />
           </div>
 
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-4 gap-5" data-stagger>
             {steps.map((step, index) => (
               <StepCard
                 key={step.n}
@@ -141,7 +141,7 @@ export default function HowItWorks() {
               style={{ height: `${progress}%` }}
             />
           </div>
-          <div className="space-y-5">
+          <div className="space-y-5" data-stagger>
             {steps.map((step, index) => (
               <div key={step.n} className="relative pl-14">
                 <span

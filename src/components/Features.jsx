@@ -78,7 +78,7 @@ export default function Features() {
     <section id="fitur" className="relative scroll-mt-28 py-24">
       <div className="grid-bg absolute inset-0 opacity-40" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan">
             Fitur utama
           </p>
@@ -90,11 +90,11 @@ export default function Features() {
           </p>
         </div>
 
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3" data-stagger>
           {features.map((feature) => (
             <article
               key={feature.title}
-              className="group rounded-2xl border border-cyan/15 bg-white/5 p-6 backdrop-blur-sm transition hover:border-cyan/40 hover:bg-cyan/5"
+              className="hover-lift group rounded-2xl border border-cyan/15 bg-white/5 p-6 backdrop-blur-sm hover:border-cyan/40 hover:bg-cyan/5"
             >
               <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-cyan/20 bg-navy-card text-cyan">
                 <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -103,6 +103,23 @@ export default function Features() {
               </div>
               <h3 className="text-lg font-semibold text-white">{feature.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-400">{feature.desc}</p>
+              {feature.previews && (
+                <div className="mt-4 flex gap-2">
+                  {feature.previews.map((preview) => (
+                    <a
+                      key={preview.alt}
+                      href="#contoh"
+                      className="block overflow-hidden rounded-xl border border-white/10"
+                    >
+                      <img
+                        src={preview.src}
+                        alt={preview.alt}
+                        className="h-16 w-24 object-cover"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
             </article>
           ))}
         </div>

@@ -29,7 +29,7 @@ export default function Audience() {
   return (
     <section className="py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
-        <div className="mx-auto max-w-2xl text-center">
+        <div className="mx-auto max-w-2xl text-center" data-reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-cyan">
             Manfaat
           </p>
@@ -37,11 +37,11 @@ export default function Audience() {
             Semua pihak mendapat kejelasan.
           </h2>
         </div>
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 lg:grid-cols-3" data-stagger>
           {groups.map((group) => (
             <article
               key={group.title}
-              className="rounded-2xl border border-white/10 bg-gradient-to-b from-navy-card/80 to-navy/40 p-8"
+              className="hover-lift rounded-2xl border border-white/10 bg-gradient-to-b from-navy-card/80 to-navy/40 p-8"
             >
               <h3 className="font-serif text-2xl text-gold">{group.title}</h3>
               <ul className="mt-6 space-y-3">
