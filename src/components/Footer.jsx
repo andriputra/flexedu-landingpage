@@ -15,6 +15,9 @@ export default function Footer() {
           <a href="#fitur" className="hover:text-cyan">
             Fitur
           </a>
+          <a href="#harga" className="hover:text-cyan">
+            Harga
+          </a>
           <a href="#kiosk" className="hover:text-cyan">
             Kiosk
           </a>

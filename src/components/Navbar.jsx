@@ -6,6 +6,7 @@ const links = [
   { href: "#kiosk", label: "Kampus" },
   { href: "#fitur", label: "Modul" },
   { href: "#alur", label: "Alur" },
+  { href: "#harga", label: "Harga" },
   { href: "#kontak", label: "Sekolah" },
 ];
 
