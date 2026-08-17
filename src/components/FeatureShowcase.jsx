@@ -4,7 +4,7 @@ const demos = [
     tag: "AI Identity",
     desc: "Siswa cukup berdiri di kiosk. Wajah dikenali, kehadiran langsung tercatat.",
     image: "./face-scan.png",
-    alt: "Contoh face detection FlexEdu",
+    alt: "Face recognition absensi siswa di kiosk sekolah FlexEdu",
     scan: true,
   },
   {
@@ -12,7 +12,7 @@ const demos = [
     tag: "Tap kartu",
     desc: "Kartu pelajar RFID sebagai opsi cadangan — cukup tempel di kiosk.",
     image: "./rfid-card.png",
-    alt: "Contoh kartu RFID pelajar FlexEdu",
+    alt: "Kartu RFID pelajar FlexEdu Student Pass untuk absensi sekolah",
     scan: false,
   },
   {
@@ -20,7 +20,7 @@ const demos = [
     tag: "Scan kode",
     desc: "QR di HP atau kartu bisa dipindai jika wajah atau RFID belum terdaftar.",
     image: "./qr-scan.png",
-    alt: "Contoh scan QR code absensi FlexEdu",
+    alt: "Scan QR code absensi sekolah FlexEdu di ponsel",
     scan: true,
   },
 ];

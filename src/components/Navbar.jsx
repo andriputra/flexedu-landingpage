@@ -16,11 +16,14 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="mx-auto max-w-7xl px-4 pt-4 sm:px-6">
-        <nav className="flex items-center justify-between rounded-2xl border border-cyan/15 bg-navy/70 px-4 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:px-5">
+        <nav
+          aria-label="Navigasi utama"
+          className="flex items-center justify-between rounded-2xl border border-cyan/15 bg-navy/70 px-4 py-3 shadow-[0_8px_40px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:px-5"
+        >
           <a href="#beranda" className="flex items-center gap-3">
             <img
               src="./logo.png"
-              alt="FlexEdu"
+              alt="Logo FlexEdu — sistem absensi sekolah digital"
               className="h-11 w-11 rounded-xl object-cover ring-1 ring-gold/40"
             />
             <div className="leading-tight">

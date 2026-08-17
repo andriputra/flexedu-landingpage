@@ -13,6 +13,23 @@
   --color-gold-deep: #e8a317;
 }
 
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  z-index: 100;
+  border-radius: 999px;
+  background: #f5b942;
+  color: #020617;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
 html {
   scroll-behavior: smooth;
   --scroll-progress: 0;

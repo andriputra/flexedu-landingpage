@@ -1,8 +1,11 @@
 export const site = {
   name: "FlexEdu",
-  tagline: "EdTech Platform for Schools",
+  tagline: "Absensi Sekolah Digital",
+  /** Ganti ke domain live di cPanel, tanpa slash di akhir. Contoh: https://flexedu.sekolahanda.sch.id */
+  url: "https://flexedu.id",
   email: "halo@flexedu.id",
   instagram: "https://instagram.com/flexedu",
+  demo: "https://flexedu-attend.vercel.app/login",
 };
 
 export const contacts = [

@@ -41,7 +41,7 @@ export default function Hero() {
             <div data-parallax="0.08" className="will-change-transform">
               <img
                 src="./face-scan.png"
-                alt="AI student identity scan FlexEdu"
+                alt="Face recognition absensi siswa FlexEdu"
                 className="float-slow w-full object-cover"
               />
             </div>

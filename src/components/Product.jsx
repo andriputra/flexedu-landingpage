@@ -17,7 +17,7 @@ export default function Product() {
             <div data-parallax="0.1" className="will-change-transform">
               <img
                 src="./kiosk.png"
-                alt="Kiosk smart campus FlexEdu"
+                  alt="Kiosk absensi sekolah FlexEdu di gerbang kampus"
                 className="w-full scale-105 object-cover"
               />
             </div>

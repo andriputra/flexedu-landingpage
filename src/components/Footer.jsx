@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="border-t border-white/10 bg-navy-deep py-10">
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 sm:flex-row sm:px-6">
         <a href="#beranda" className="flex items-center gap-3">
-          <img src="./logo.png" alt="FlexEdu" className="h-10 w-10 rounded-lg object-cover" />
+          <img src="./logo.png" alt="Logo FlexEdu absensi sekolah" className="h-10 w-10 rounded-lg object-cover" />
           <div>
             <p className="font-serif text-gold">FlexEdu</p>
             <p className="text-xs text-slate-500">Absensi sekolah cerdas</p>

@@ -49,7 +49,13 @@ whatsapp: "6281234567890", // tanpa +, format 62
 email: "halo@flexedu.id",
 ```
 
-## Catatan desain
+## SEO (setelah upload)
+
+1. Di `src/config.js`, set `url` ke domain live (contoh `https://namadomain.com`) — tanpa slash di akhir.
+2. Jalankan `npm run build` lagi, lalu unggah ulang isi `dist/`.
+3. Di [Google Search Console](https://search.google.com/search-console), tambahkan properti domain, verifikasi, lalu kirim `https://domain-anda.com/sitemap.xml`.
+
+Peringkat #1 tidak bisa dijamin hanya dari meta tag; Google juga menilai domain, backlink, dan kecepatan. On-page SEO (title, schema, FAQ, sitemap) sudah dipasang sebagai fondasi.
 
 - Latar navy gelap + aksen cyan (face scan & kiosk)
 - Aksen emas dari logo EDU untuk tombol CTA
