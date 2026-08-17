@@ -27,7 +27,7 @@ export default function Footer() {
             Demo
           </a>
         </div>
-        <p className="text-xs text-slate-500">© {new Date().getFullYear()} FlexEdu. All rights reserved.</p>
+        <p className="text-xs text-slate-500">© {new Date().getFullYear()} FlexEdu. All rights reserved. by <a href="https://flexbox.id" target="_blank" className="hover:text-cyan">Flexbox Indonesia</a></p>
       </div>
     </footer>
   );
