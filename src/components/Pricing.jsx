@@ -1,4 +1,4 @@
-import { waLink } from "../config";
+import WaButton from "./WaButton.jsx";
 
 const plans = [
   {
@@ -146,18 +146,16 @@ export default function Pricing() {
                 ))}
               </ul>
 
-              <a
-                href={waLink(plan.message)}
-                target="_blank"
-                rel="noreferrer"
-                className={`mt-8 block rounded-full py-3 text-center text-sm font-bold transition ${
+              <WaButton
+                message={plan.message}
+                className={`mt-8 w-full rounded-full py-3 text-center text-sm font-bold transition ${
                   plan.featured
                     ? "glow-gold bg-gold text-navy hover:bg-gold-deep"
                     : "border border-cyan/40 text-cyan hover:bg-cyan/10"
                 }`}
               >
                 {plan.cta}
-              </a>
+              </WaButton>
             </article>
           ))}
         </div>

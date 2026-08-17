@@ -1,4 +1,5 @@
-import { site, waLink } from "../config";
+import { site } from "../config";
+import WaButton from "./WaButton.jsx";
 
 export default function Footer() {
   return (
@@ -21,9 +22,7 @@ export default function Footer() {
           <a href="#kiosk" className="hover:text-cyan">
             Kiosk
           </a>
-          <a href={waLink()} target="_blank" rel="noreferrer" className="hover:text-cyan">
-            WhatsApp
-          </a>
+          <WaButton className="hover:text-cyan">WhatsApp</WaButton>
           <a href={`mailto:${site.email}`} className="hover:text-cyan">
             Email
           </a>

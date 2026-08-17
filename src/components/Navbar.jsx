@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { waLink } from "../config";
+import WaButton from "./WaButton.jsx";
 
 const links = [
   { href: "#solusi", label: "Platform" },
@@ -41,14 +41,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noreferrer"
-              className="rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy transition hover:bg-gold-deep"
-            >
+            <WaButton className="rounded-full bg-gold px-5 py-2 text-sm font-semibold text-navy transition hover:bg-gold-deep">
               Konsultasi
-            </a>
+            </WaButton>
           </div>
 
           <button
@@ -79,14 +74,9 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-2 block rounded-full bg-gold px-5 py-2.5 text-center text-sm font-semibold text-navy"
-            >
+            <WaButton className="mt-2 block w-full rounded-full bg-gold px-5 py-2.5 text-center text-sm font-semibold text-navy">
               Demo untuk Sekolah
-            </a>
+            </WaButton>
           </div>
         )}
       </div>

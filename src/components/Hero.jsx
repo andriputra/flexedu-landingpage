@@ -1,4 +1,4 @@
-import { waLink } from "../config";
+import WaButton from "./WaButton.jsx";
 
 export default function Hero() {
   return (
@@ -22,14 +22,9 @@ export default function Hero() {
             data akademik tercatat otomatis, guru dan orang tua terhubung dalam satu ekosistem.
           </p>
           <div className="fade-up delay-3 mt-7 flex flex-wrap items-center gap-4">
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noreferrer"
-              className="glow-gold rounded-full bg-gold px-7 py-3 text-sm font-bold text-navy transition hover:bg-gold-deep"
-            >
+            <WaButton className="glow-gold rounded-full bg-gold px-7 py-3 text-sm font-bold text-navy transition hover:bg-gold-deep">
               Ajukan Demo Sekolah
-            </a>
+            </WaButton>
             <a
               href="#kiosk"
               className="rounded-full border border-cyan/40 px-7 py-3 text-sm font-semibold text-cyan transition hover:border-cyan hover:bg-cyan/10"

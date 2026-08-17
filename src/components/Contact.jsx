@@ -1,7 +1,9 @@
 import { useState } from "react";
-import { site, waLink } from "../config";
+import { contacts, formatPhone, site, waLink } from "../config";
+import { useWa } from "../wa";
 
 export default function Contact() {
+  const { openWa } = useWa();
   const [form, setForm] = useState({
     name: "",
     school: "",
@@ -15,7 +17,7 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault();
     const text = `Halo FlexEdu, saya ${form.name || "(nama)"} dari ${form.school || "(sekolah)"}. ${form.message || "Saya ingin konsultasi sistem absensi kiosk + face recognition."}`;
-    window.open(waLink(text), "_blank", "noopener,noreferrer");
+    openWa(text);
   };
 
   return (
@@ -33,14 +35,25 @@ export default function Contact() {
             Ceritakan kebutuhan sekolah Anda. Tim FlexEdu akan bantu merancang paket kiosk,
             face recognition, dan notifikasi orang tua.
           </p>
-          <div className="mt-8 space-y-3 text-sm text-slate-300">
-            <p>
-              WhatsApp:{" "}
-              <a className="text-cyan hover:underline" href={waLink()} target="_blank" rel="noreferrer">
-                +{site.whatsapp}
+          <div className="mt-8 space-y-3">
+            {contacts.map((contact) => (
+              <a
+                key={contact.id}
+                href={waLink(contact.phone)}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between rounded-xl border border-white/10 bg-navy/40 px-4 py-3 text-sm transition hover:border-cyan/40"
+              >
+                <span className="text-slate-200">
+                  {contact.name}
+                  <span className="mt-0.5 block text-xs text-slate-400">
+                    {formatPhone(contact.phone)}
+                  </span>
+                </span>
+                <span className="text-cyan">WhatsApp</span>
               </a>
-            </p>
-            <p>
+            ))}
+            <p className="pt-1 text-sm text-slate-300">
               Email:{" "}
               <a className="text-cyan hover:underline" href={`mailto:${site.email}`}>
                 {site.email}
